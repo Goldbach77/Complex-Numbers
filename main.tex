@@ -1,0 +1,484 @@
+\documentclass[]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage[lmargin=3cm,tmargin=3cm,rmargin=2cm,bmargin=2cm]{geometry}
+\usepackage[onehalfspacing]{setspace}
+
+\usepackage{graphicx,xcolor,comment,enumerate,multirow,multicol,indentfirst}
+\everymath{\displaystyle}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,dsfont,mathtools,blindtext}
+
+
+\title{Números Complexos - O necessário}
+\author{Luiz Felipe e Fabio Nagamine}
+\date{\today}
+
+\date{February 2021}
+
+\begin{document}
+
+\maketitle
+\begin{large}
+\section{Conceitos iniciais}
+\begin{flushleft}
+
+Potências de i \vspace{.3cm}
+
+$i^0 = 1$
+
+$i^1 = i$
+
+$i^2 = -1$
+
+$i^3 = -i$
+
+$i^4 = 1$
+
+$i^5 = i$
+
+$i^6 = -1$
+
+$i^7 = -i$
+
+$i^8 = 1$ \vspace{.3cm}
+
+A cada 4 números contados, eles começam a se repetir.
+
+\subsection{Formas algébricas}
+
+Forma algébrica: $z=a+bi$.
+
+A letra a representa a parte real, já a letra b multiplicando o i representa a parte imaginária.
+
+Exemplos: \vspace{.3cm}
+
+A) $2+3i$, 2 é a parte real e 3 é a parte imaginária.
+
+B) $1-i$, 1 é a parte real e -1 é a parte imaginária.
+
+C) $7$, 7 é a parte real e 0 é a parte imaginária.
+
+D) $5i$, 0 é a parte real e 5 é a parte imaginária.
+
+\subsection{Classificações - Real, imaginário e Imaginário Puro}
+
+Real: Quando o $b = 0$.
+
+Imaginário: Quando o $b \not= 0$.
+
+Puro: Quando o $b \not= 0$ e $a = 0$
+
+\subsection{Igualdade}
+
+Dois complexos são iguais quando as partes reais forem iguais e as partes imagináris também forem iguais. \vspace{.3cm}
+
+Exemplo: \vspace{.3cm}
+
+\begin{center}
+
+Se $z = w$
+
+então
+
+{$a = c$ e $b = d$}
+
+\end{center}
+
+Exemplo: \vspace{.3cm}
+
+$z = 3+(k-5)i$ e $w = (x^2-6)-2i$ são iguais. Calcule $k$ e $x$ \vspace{.3cm}
+
+\begin{center}
+
+Valor de $X$
+
+$x^2-6=3$
+
+$x^2=9$
+
+$x=\pm{3}$ \vspace{.3cm}
+
+Valor de $K$
+
+$k-5 = -2$
+
+$k=3$
+\end{center} 
+
+\subsection{Operações - Adição, subtração, multiplicação e divisão}
+
+Somamos ou subtraimos a parte real com parte real e parte imaginária com parte parte imaginária. \vspace{.3cm}
+
+Exemplo: \vspace{.3cm}
+
+\begin{center}
+    $z = 3+4i$ e $w = -1+2i$
+\end{center}
+
+Calculando $z+w$ teremos: \vspace{.3cm}
+
+\begin{center}
+    $3-1 = 2$
+    
+    $4i + 2i = 6i$
+    
+    então
+    
+    $z+w = 2+6i$
+\end{center}
+
+Exemplo: \vspace{.3cm}
+
+\begin{center}
+    $z = 5+i$ e $w = -1+3i$
+\end{center}
+
+Calculando $z-w$ teremos: \vspace{.3cm}
+
+\begin{center}
+    $5-(-1) = 6$
+    
+    $1i - 3i = 2i$
+    
+    então
+    
+    $z-w = 6+2i$
+\end{center}
+
+Exemplo: \vspace{.3cm}
+
+\begin{center}
+    $z=2+3i$ e $w=3-2i$
+\end{center}
+
+Calculando $z.w$ teremos: \vspace{.3cm}
+
+\begin{center}
+    $(2+3i).(3-2i)=$
+    
+    $6-4i+9i-6i^2=6+5i-6i^2$
+    
+\end{center}
+
+Usando a propriedade de $i^2 = -1$ teremos: \vspace{.3cm}
+
+\begin{center}
+    $6+5i-6.-1= 12+5i$
+\end{center}
+
+Divisão: \vspace{.3cm}
+
+Conjugado: O conjugado de $z=a+bi$ é igual a $z=a-bi$, então apenas o sinal é trocado.
+
+Para realizar a divisão de $z por w$ faremos o seguinte: \vspace{.3cm}
+
+\begin{center}
+    $\frac{z}{w} = \frac{z}{w}.\frac{w}{w}$
+\end{center}
+
+Exemplo: \vspace{.3cm}
+
+Seja $z=2+3i$ e $w=3-i$, calcule $z \div w$ \vspace{.3cm}
+
+\begin{center}
+    $\frac{2-3i}{3-i} \cdot \frac{3+i}{3+i} = \frac{6+2i-9i-3i^2}{3^2-i^2} = \frac{6-7i+3}{9+1} = \frac{9-7i}{10}$ \vspace{.3cm}
+\end{center}
+
+\section{Interpretação geométrica, módulo e argumento}
+
+\includegraphics[width=12cm]{AA} \vspace{.3cm}
+
+Exemplo: \vspace{.3cm}
+
+\begin{center}
+    $z=2+3i$ e $w=-2+2i$
+\end{center}
+
+A representação geométrica dessa equação será:
+
+\includegraphics[width=12cm]{AAA} \vspace{.3cm}
+
+A parte real da equação é escrita no eixo das abscissas e a parte imaginária no eixo das ordenadas.
+
+\subsection{Modulo}
+
+O módulo é a distancia da origem até o afixo e pode ser representade de duas maneiras: Pela letra grega $\rho$ ou $|z|$ como veremos abaixo representado na imagem.
+
+\includegraphics[width=12cm]{AAAA} \vspace{.3cm}
+
+A formula utilizada para achar o valor do módulo é \vspace{.3cm}
+\begin{center}
+    $\rho=\sqrt{a^2+b^2}$    
+\end{center}
+
+
+Exemplos: \vspace{.3cm}
+
+Determine o módulo dos valores abaixo:
+
+A) $2+3i$ \vspace{.2cm}
+\begin{center}
+$\rho=\sqrt{2^2+3^2}$
+
+$\rho=\sqrt{4+9}$
+
+$\rho=\sqrt{a^2+b^2}$  
+
+$\rho=\sqrt{13}$ \vspace{.3cm}
+
+\end{center}
+B) $5i$ \vspace{.2cm}
+\begin{center}
+$\rho=\sqrt{0^2+5^2}$  
+
+$\rho=\sqrt{25}$  
+
+$\rho= 5$ \vspace{.3cm}
+\end{center}
+\subsection{Argumento}
+
+O argumento não é nada mais do que um ângulo, ou seja, é o angulo formado entra o eixo $x$ e o eixo $y$ no sentido anti-horário como veremos na imagem a seguir:
+
+\includegraphics[width=12cm]{AAAAA} \vspace{.3cm}
+
+As formulas que serão usadas para encontrar o valor do argumento serão: \vspace{.3cm}
+
+\begin{center}
+    $cos\theta = \frac{b}{\rho}$
+\end{center}
+
+\begin{center}
+    $sen\theta = \frac{a}{\rho}$
+\end{center}
+
+Exemplo: \vspace{.3cm}
+
+Determine o modulo de $z=\sqrt{3}+i$
+\begin{center}
+    $\rho=\sqrt{\sqrt{(a)^2}+1^2}$
+    
+    $\rho=\sqrt{4}$
+    
+    $\rho=2$
+    
+\end{center}
+
+Com o resultado do modulo, podemos calcular o argumento é: \vspace{.3cm}
+
+\begin{center}
+    $sen\theta=\frac{1}{2}=30^{\circ}$
+\end{center}
+
+\begin{center}
+    $cos\theta=\frac{\sqrt{3}}{2}=30^{\circ}$
+\end{center}
+
+\begin{center}
+    $\theta=30^{\circ}$ ou $\frac{\pi}{6}$
+\end{center}
+
+\includegraphics[width=12cm]{AAAAAA}
+
+Ou seja, o angulo $\theta$ da imagem acima vale $\frac{\pi}{6}$ \vspace{.3cm}
+
+\section{Formas trigonométricas}
+
+Para calcular usando a forma trigonométrica usamos a formula a seguir: \vspace{.3cm}
+
+\begin{center}
+    $z=\rho(cos\theta + isen\theta)$ \vspace{.3cm}
+\end{center}
+
+Para conseguir usar essa formula, você precisa do valor de $\rho$ e do valor de $cos\theta$ e $sen\theta$. \vspace{.3cm}
+
+Exemplo: \vspace{.3cm}
+
+Dê a forma trigonométrica de $z=2+2i$
+
+Primeiro temos que achar o valor do módulo: \vspace{.3cm}
+
+\begin{center}
+    $\rho=\sqrt{2^2+2^2} = \sqrt{8}$
+    
+    $\sqrt{8}$ pode ser escrita dessa forma $2\sqrt{2}$ \vspace{.3cm}
+\end{center}
+
+Agora vamos encontrar o valor do argumento: \vspace{.3cm}
+
+\begin{center}
+    $sen\theta=\frac{2}{2\sqrt{2}}$
+\end{center}
+
+Racionalizando, teremos: \vspace{.3cm}
+
+\begin{center}
+    $\theta=\frac{2}{2\sqrt{2}} \cdot \frac{\sqrt{2}}{\sqrt{2}} = \frac{\sqrt{2}}{2} = 45^\circ$ \vspace{.3cm}
+\end{center}
+
+Agora vamos achar o cosseno: \vspace{.3cm}
+
+\begin{center}
+    $cos\theta=\frac{2}{2\sqrt{2}}$
+\end{center}
+
+Racionalizando, teremos: \vspace{.3cm}
+
+\begin{center}
+    $\theta=\frac{2}{2\sqrt{2}} \cdot \frac{\sqrt{2}}{\sqrt{2}} = \frac{\sqrt{2}}{2} = 45^\circ$ \vspace{.3cm}
+\end{center}
+
+Ou seja, o angulo $\theta$ é igual a $45^\circ$ ou $\frac{\pi}{4}$ \vspace{.3cm}
+
+Agora para descobrir a forma trigonométrica, vamos usar a formula: \vspace{.3cm}
+
+\begin{center}
+    $z=\rho(cos\theta + isen\theta)$ \vspace{.3cm}
+    
+    \text{Agora vamos substituir os valores na formula.} \vspace{.3cm}
+    
+    $z=2\sqrt{2}(cos\frac{\pi}{4} + isen\frac{\pi}{4})$ \vspace{.3cm}
+    
+    \text{Então esse é o resultado da forma trigonométrica da equação.} \vspace{.3cm}
+\end{center}
+
+Exemplo 2: \vspace{.3cm}
+
+Dê a forma trigonométrica de $z=-1+i$
+Vamos achar o valor do módulo: \vspace{.3cm}
+
+\begin{center}
+    $\rho=\sqrt{\sqrt{(-1)^2}+1^2} = \sqrt{2}$ \vspace{.3cm}
+\end{center}
+
+Agora vamos achar o argumento: \vspace{.3cm}
+
+\begin{center}
+    $sen\theta=\frac{1}{\sqrt{2}}$ \vspace{.cm}
+\end{center}
+
+Racionalizando, teremos: \vspace{.3cm}
+
+\begin{center}
+    $\frac{1}{\sqrt{2}} \cdot \frac{\sqrt{2}}{\sqrt{2}} = \frac{\sqrt{2}}{2}$ \vspace{.3cm}
+\end{center}
+
+Vamos achar o valor do cosseno: \vspace{.3cm}
+
+\begin{center}
+    $cos\theta=\frac{-1}{\sqrt{2}} = \frac{-\sqrt{2}}{2}$ \vspace{.3cm}
+\end{center}
+
+Vemos que o valor do cosseno ficou negativo, então com os devidos conhecimentos sobre o circulo trigonométrico, sabemos que o multiplo de $45^\circ$ é $135^\circ$. \vspace{.3cm}
+
+Então o valor de $\theta$ vai ser $135^\circ$. \vspace{.3cm}
+
+Agora vamos escrever na forma trigonométrica: \vspace{.3cm}
+
+\begin{center}
+    $z=\sqrt{2}(cos135^\circ + iseno135^\circ)$ \vspace{.3cm}
+\end{center}
+
+\subsection{Formas trigonométricas - Multiplicação e divisão}
+
+Multiplicação \vspace{.3cm}
+
+Para realizar a multiplicação, vamos usar a formula a seguir: \vspace{.3cm}
+
+\begin{center}
+    $z1 \cdot z2=\rho1\cdot\rho2(cos(\theta1+\theta2)+isen(\theta1+\theta2))$
+\end{center}
+
+Exemplo: \vspace{.3cm}
+
+Seja $z=2(cos45^\circ +isen45^\circ)$ e $w=\sqrt{3}(cos30^\circ +isen30^\circ$, qual o resultado de $z\cdot w$ ? \vspace{.3cm}
+
+Utilizando a formula que nos foi apresentada, chegaremos nesse resultado: \vspace{.3cm}
+
+\begin{center}
+    $z \cdot w = 2\sqrt{3}(cos75^\circ+isen75^\circ)$ \vspace{.3cm}
+\end{center}
+
+Divisão: \vspace{.3cm}
+
+Para fazer aa divisão, usaremos a formula a seguir: \vspace{.3cm}
+
+\begin{center}
+    $\frac{z1}{z2}=\frac{\rho1}{\rho2}(cos(\theta1-\theta2) + isen(\theta1 - \theta2))$ \vspace{.3cm}
+\end{center}
+
+Exemplo: \vspace{.3cm}
+
+Seja $z=3(cos2\pi+isen2\pi)$ e $w=2(cos\frac{\pi}{3} + isen\frac{\pi}{3})$, calcule $\frac{z}{w}$
+
+Utilizando a forma, teremos: \vspace{.3cm}
+
+\begin{center}
+    $\frac{z}{w}=\frac{3}{2}(cos\frac{5\pi}{3} + isen\frac{5\pi}{3})$ \vspace{.3cm}
+\end{center}
+
+\section{Potenciação - Formula de moivre}
+
+\subsection{Potenciação}
+
+Vamos falar sobre a $1^a$ formula de Moivre, que é sobre potenciação: \vspace{.3cm}
+
+\begin{center}
+    $z^2=\rho^n(cos(n \cdot \theta)+isen(n \cdot \theta))$ \vspace{.3cm}
+\end{center}
+
+A formula apresentando acima, é usada para calcular a potenciação.
+
+Exemplo: \vspace{.3cm}
+
+Seja $z=5(cos\frac{\pi}{3} + isen\frac{\pi}{3)}$, calcule $z^3$ \vspace{.3cm}
+
+\begin{center}
+    $z^3=5^3(cos(3\cdot \frac{\pi}{3}) + isen(3\cdot \frac{\pi}{3}))=$
+    
+    $z^3=125(cos\pi + isen\pi)$ \vspace{.3cm}
+\end{center}
+
+Exemplo 2: \vspace{.3cm}
+
+Calcule $(\sqrt{3}+i)^1{}^0$ \vspace{.3cm}
+
+Vamos encontrar o valor do módulo:
+
+\begin{center}
+    $\rho=\sqrt{\sqrt{(3)^2}+1^2} = 2$ \vspace{.3cm}
+\end{center}
+
+Agora vamos encontrar o valor do argumento: \vspace{.3cm}
+
+\begin{center}
+    $sen\theta=\frac{1}{2}=30^\circ$ \vspace{.3cm}
+    
+    $cos\theta=\frac{\sqrt{3}}{2}=30^\circ$ \vspace{.3cm}
+\end{center}
+
+Então o valor do argumento será: \vspace{.3cm}
+
+\begin{center}
+    $\theta=30^\circ$ ou $\frac{\pi}{6}$
+\end{center}
+
+Agora vamos determinar a forma trigonométrica: \vspace{.cm}
+
+\begin{center}
+    $z=2(cos \cdot \frac{\pi}{6} + isen \cdot \frac{\pi}{6})$
+\end{center}
+
+Agora vamos calcular $z^1{}^0$ \vspace{.3cm}
+
+\begin{center}
+    $z^1{}^0=2^1{}^0(cos(10 \cdot \frac{\pi}{6}) + isen(10 \cdot \frac{\pi}{6}))$ \vspace{.3cm}
+    
+    $z^1{}^0=1024(cos\frac{5\pi}{3}+isen\frac{5\pi}{3})$ \vspace{.3cm}
+\end{center}
+
+
+Com o conhecimento adquirido desse documento, você estára apto a resolver problemas envolvendo números complexos.
+
+\end{flushleft}
+\end{large}
+\end{document}
